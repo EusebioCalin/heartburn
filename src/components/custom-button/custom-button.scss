@@ -1,0 +1,16 @@
+@import '../../utils/common.scss';
+
+.btn {
+    background-color: white;
+    border: 0;
+    padding: 10px 15px;
+    color: 'white';
+    border: 1px solid grey;
+    border-radius : 25px;
+    color:$medical-color;
+    cursor: pointer;
+    text-align: center;
+    min-width: 80px;
+    font-size: large;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}

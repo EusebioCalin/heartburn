@@ -1,0 +1,17 @@
+@import '../../utils/common.scss';
+.form-header {
+    flex: 0 1 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width:100%;
+}
+
+.form-header__icon {
+    margin: 0 6px;
+}
+.form-header__title {
+    flex-grow: 2;
+    text-align: center;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
