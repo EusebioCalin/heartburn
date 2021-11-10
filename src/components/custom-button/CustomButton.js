@@ -1,7 +1,7 @@
 import React from 'react';
-import { ReactComponent as IconRightWhite } from '../../icons/ic-arrow-right-white.svg';
-import { ReactComponent as IconRightGray } from '../../icons/ic-arrow-right-gray.svg';
-import { ReactComponent as IconCheckmark } from '../../icons/ic-checkmark.svg';
+import { ReactComponent as IconRightWhite } from '../../utils/icons/ic-arrow-right-white.svg';
+import { ReactComponent as IconRightGray } from '../../utils/icons/ic-arrow-right-gray.svg';
+import { ReactComponent as IconCheckmark } from '../../utils/icons/ic-checkmark.svg';
 
 import './custom-button.scss';
 

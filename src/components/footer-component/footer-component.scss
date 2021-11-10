@@ -1,14 +1,14 @@
 @import '../../utils/common.scss';
 
 a:link, a:visited {
-    color: $medical-color;
+    color: $medical-green;
     font-family: Montserrat-Regular, Arial, Helvetica, sans-serif;
     font-size: large;
 }
 
 .footer__action-button {
-    height: 72px;
     display: flex;
+    height: 72px;
     width: 100%;
 
     @media (max-width: 768px) {
@@ -18,9 +18,9 @@ a:link, a:visited {
 }
 
 .footer__action-button__container {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     flex: 1 1 auto;
+    justify-content: center;
     margin: 12px 24px 12px 24px;
 }

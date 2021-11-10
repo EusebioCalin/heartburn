@@ -1,10 +1,10 @@
 import React from 'react';
-import { ReactComponent as IconSvg } from '../../icons/ic-arrow-left-green.svg';
+import { ReactComponent as IconSvg } from '../../utils/icons/ic-arrow-left-green.svg';
 import ProgressBar from '../progress-bar/ProgressBar'
 
 import  './form-header.scss';
 
-const FormHeader = ({progress, goBack}) => {
+const FormHeader = ({goBack,progress}) => {
     const title = 'HeartBurn Checker';
 
     const onButtonClick = () => {
@@ -13,7 +13,7 @@ const FormHeader = ({progress, goBack}) => {
     return (
         <div className="form-header">
             <div className="form-header__content">
-                <span onClick={onButtonClick} className="form-header__icon">
+                <span className="form-header__icon" onClick={onButtonClick} >
                     <IconSvg/>
                 </span>
                 <span className="form-header__title">

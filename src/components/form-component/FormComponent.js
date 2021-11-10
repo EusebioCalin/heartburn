@@ -1,14 +1,23 @@
 import React, { useState } from 'react';
-import FormHeader from '../form-header/FormHeader';
 import { connect } from 'react-redux';
-import CustomButton from '../custom-button/CustomButton';
 import { saveAnswer, goToPreviousQuestion, reset } from "../../store/questionaire/questionaire";
-import './form-component.scss';
+import FormHeader from '../form-header/FormHeader';
+
 import OutcomeContainer from '../outcome-container.js/OutcomeContainer';
 import FooterComponent from '../footer-component/FooterComponent';
 import QuestionContainer from '../question-container/QuestionContainer';
 
-const FormContainer = ({ currentQuestion, saveAnswer, goToPreviousQuestion, finished, finalOutcome, progress, reset }) => {
+import './form-component.scss';
+
+const FormContainer = ({ 
+    currentQuestion, 
+    finalOutcome, 
+    finished, 
+    goToPreviousQuestion, 
+    progress, 
+    reset, 
+    saveAnswer, 
+    }) => {
 
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const goBack = () => {
@@ -24,19 +33,26 @@ const FormContainer = ({ currentQuestion, saveAnswer, goToPreviousQuestion, fini
     }
 
     const displayedContent = !finished 
-    ? ( <QuestionContainer question={currentQuestion} selectedAnswer={selectedAnswer} setSelectedAnswer={setIsSelected} />) 
-    : ( <OutcomeContainer outcomeText={finalOutcome.text} showBookingButton={finalOutcome.show_booking_button}/> )
+    ? ( <QuestionContainer 
+            question={currentQuestion} 
+            selectedAnswer={selectedAnswer} 
+            setSelectedAnswer={setIsSelected} 
+        /> ) 
+    : ( <OutcomeContainer 
+            outcomeText={finalOutcome.text} 
+            showBookingButton={finalOutcome.show_booking_button}
+        /> )
 
     return (
         <div className="container">
-            <FormHeader progress={progress} goBack={goBack}/>
+            <FormHeader goBack={goBack} progress={progress} />
             {displayedContent}
             <FooterComponent 
-                finished={finished}
-                title="Next"
                 disabled={!selectedAnswer}
+                finished={finished}
                 onButtonClick={onNextButtonClick}
                 onResetQuestionaire={reset}
+                title="Next"
             />
         </div>
     )

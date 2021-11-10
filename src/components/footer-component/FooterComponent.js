@@ -5,7 +5,6 @@ import './footer-component.scss';
 const FooterComponent = ({disabled, onButtonClick, finished, onResetQuestionaire}) => {
 
     const onLinkClick = () => {
-        console.log('aici');
         onResetQuestionaire();
     }
     const content = !finished ? 

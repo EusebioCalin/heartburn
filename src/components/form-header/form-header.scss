@@ -3,11 +3,10 @@
     width:100%;
 }
 .form-header__content {
-    display: flex;
     align-items: center;
-    justify-content: flex-start;
-    min-height: 60px;
+    display: flex;
     margin-top: 10px;
+    min-height: 60px;
 }
 .form-header__icon {
     margin: 0 0 0 12px;
@@ -17,7 +16,7 @@
 }
 .form-header__title {
     flex: 1 0 auto;
-    text-align: center;
-    font-size: large;
     font-family: Montserrat-Medium, Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
 }

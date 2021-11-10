@@ -2,17 +2,21 @@ import React from 'react';
 import CustomButton from '../custom-button/CustomButton';
 
 import './question-container.scss';
-const QuestionContainer = ({question, selectedAnswer, setSelectedAnswer}) => {
+const QuestionContainer = ({
+        question, 
+        selectedAnswer, 
+        setSelectedAnswer
+    }) => {
 
     const { answers } = question;
 
     const buttons = answers.map((answer) => 
         <CustomButton
-            key={answer.id}
-            id={answer.id}
-            title={answer.label}
-            isSelected={selectedAnswer && selectedAnswer === answer.id ? true : false}
             clickHandler={setSelectedAnswer}
+            id={answer.id}
+            isSelected={selectedAnswer && selectedAnswer === answer.id ? true : false}
+            key={answer.id}
+            title={answer.label}
         />
     );
 

@@ -1,18 +1,18 @@
 .outcome-container {
+    align-items: center;
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
     justify-content: center;
-    align-items: center;
     margin: 0 20px;
 }
 
 .outcome-container__title {
     font-family: Montserrat-Extra-Bold, Arial, Helvetica, sans-serif;
     font-size: x-large;
-    position: relative;
     margin-bottom: 20px;
     padding-bottom: 20px;
+    position: relative;
 }
 
 .outcome-container__text {
@@ -21,8 +21,8 @@
 }
 
 .outcome_container__action-button {
-    height: 72px;
     display: flex;
+    height: 72px;
     width: 100%;
 
     @media (max-width: 768px) {

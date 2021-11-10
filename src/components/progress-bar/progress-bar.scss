@@ -3,14 +3,12 @@
 #progressbar {
     background-color: $medical-gray;
     border-radius: 13px;
-    /* (height of inner div) / 2 + padding */
     width: 100%;
 }
   
 #progressbar>div {
-    background-color: $medical-color;
-    transition: width 2s;
-        /* Adjust with JavaScript */
-    height: 2px;
+    background-color: $medical-green;
     border-radius: 10px;
+    height: 2px;
+    transition: width 2s;
 }
