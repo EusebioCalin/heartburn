@@ -1,0 +1,26 @@
+@import '../../utils/common.scss';
+
+a:link, a:visited {
+    color: $medical-color;
+    font-family: Montserrat-Regular, Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.footer__action-button {
+    height: 72px;
+    display: flex;
+    width: 100%;
+
+    @media (max-width: 768px) {
+        margin: 12px 0;
+        
+    }
+}
+
+.footer__action-button__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    margin: 12px 24px 12px 24px;
+}

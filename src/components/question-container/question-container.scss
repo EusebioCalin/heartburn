@@ -1,0 +1,39 @@
+@import '../../utils/common.scss';
+
+.question-container__form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    justify-content: center;
+}
+
+.question-container__form-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    flex: 0 1 0px;
+    font-size: large;
+}
+
+.question-container__question {
+    flex: 0 1 100px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    margin: 20px;
+    font-family: Montserrat-Extra-Bold, Arial, Helvetica, sans-serif;
+}
+
+.question-container__question-text {
+    margin-bottom: 20px;
+    font-size: x-large;
+}
+
+.question-container__question-border {
+    position: absolute;
+    background-color: $medical-gray;
+    height: 4px;
+    width: 40px;
+    bottom: 0;
+}

@@ -1,17 +1,23 @@
 @import '../../utils/common.scss';
 .form-header {
-    flex: 0 1 50px;
+    width:100%;
+}
+.form-header__content {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width:100%;
+    min-height: 60px;
+    margin-top: 10px;
 }
-
 .form-header__icon {
-    margin: 0 6px;
+    margin: 0 0 0 12px;
+    :hover {
+        cursor: pointer;
+    }
 }
 .form-header__title {
-    flex-grow: 2;
+    flex: 1 0 auto;
     text-align: center;
-    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-family: Montserrat-Medium, Arial, Helvetica, sans-serif;
 }

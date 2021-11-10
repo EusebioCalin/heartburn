@@ -1,0 +1,16 @@
+@import '../../utils/common.scss';
+
+#progressbar {
+    background-color: $medical-gray;
+    border-radius: 13px;
+    /* (height of inner div) / 2 + padding */
+    width: 100%;
+}
+  
+#progressbar>div {
+    background-color: $medical-color;
+    transition: width 2s;
+        /* Adjust with JavaScript */
+    height: 2px;
+    border-radius: 10px;
+}
