@@ -45,9 +45,9 @@ export const questionaire = createSlice({
                 state.finished = true;
                 let finalOutcome;
                 currentQuestion.next.forEach((next) => {
-                    if (next.max_score && next.max_score >= state.score) {
+                    if (next.max_score && next.max_score >= state.score && !finalOutcome) {
                         finalOutcome = state.outcomes.find(outcome => outcome.id === next.outcome);
-                    } else if (!finalOutcome){
+                    } else if (!finalOutcome && !next.max_score){
                         finalOutcome = state.outcomes.find(outcome => outcome.id === next.outcome);
                     }
                 })

@@ -1,5 +1,6 @@
 import React from 'react';
 import CustomButton from '../custom-button/CustomButton';
+import { FOOTER_BUTTON_TEXT } from '../../utils/common';
 
 import './footer-component.scss';
 const FooterComponent = ({disabled, onButtonClick, finished, onResetQuestionaire}) => {
@@ -10,7 +11,7 @@ const FooterComponent = ({disabled, onButtonClick, finished, onResetQuestionaire
     const content = !finished ? 
     (
         <CustomButton
-            title="Next"
+            title={FOOTER_BUTTON_TEXT}
             disabled={disabled}
             clickHandler={onButtonClick}
         />

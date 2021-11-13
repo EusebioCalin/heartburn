@@ -1,11 +1,10 @@
 import React from 'react';
 import { ReactComponent as IconSvg } from '../../utils/icons/ic-arrow-left-green.svg';
 import ProgressBar from '../progress-bar/ProgressBar'
-
+import { FORM_HEADER_TITLE } from '../../utils/common';
 import  './form-header.scss';
 
 const FormHeader = ({goBack,progress}) => {
-    const title = 'HeartBurn Checker';
 
     const onButtonClick = () => {
         goBack();
@@ -17,7 +16,7 @@ const FormHeader = ({goBack,progress}) => {
                     <IconSvg/>
                 </span>
                 <span className="form-header__title">
-                    {title}
+                    {FORM_HEADER_TITLE}
                 </span>
             </div>
             <ProgressBar progress={progress}/>

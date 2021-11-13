@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { saveAnswer, goToPreviousQuestion, reset } from "../../store/questionaire/questionaire";
 import FormHeader from '../form-header/FormHeader';
-
 import OutcomeContainer from '../outcome-container.js/OutcomeContainer';
 import FooterComponent from '../footer-component/FooterComponent';
 import QuestionContainer from '../question-container/QuestionContainer';
@@ -52,7 +51,6 @@ const FormContainer = ({
                 finished={finished}
                 onButtonClick={onNextButtonClick}
                 onResetQuestionaire={reset}
-                title="Next"
             />
         </div>
     )
